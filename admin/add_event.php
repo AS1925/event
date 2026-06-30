@@ -48,7 +48,7 @@ if(isset($_POST['save']))
     <head>
         <title>Add Event</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
@@ -87,6 +87,7 @@ if(isset($_POST['save']))
         <br><br>
         <a href="dashboard.php">Back Dashboard</a>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="script.js"></script>
+        <script src="../assets/js/script.js"></script>
     </body>    
 </html>
+
