@@ -17,6 +17,8 @@ service_requests.event_type,
 service_requests.event_date,
 service_requests.venue,
 service_requests.guests,
+service_requests.decoration,
+service_requests.additional_requirements,
 service_requests.status
 
 FROM service_requests
@@ -49,6 +51,7 @@ ORDER BY service_requests.id DESC
 <th>Date</th>
 <th>Venue</th>
 <th>Guests</th>
+<th>Decorator Request</th>
 <th>Status</th>
 <th>Action</th>
 </tr>
@@ -74,6 +77,8 @@ while($row=mysqli_fetch_assoc($query))
 <td><?php echo $row['venue']; ?></td>
 
 <td><?php echo $row['guests']; ?></td>
+
+<td><?php echo nl2br($row['additional_requirements']); ?></td>
 
 <td><?php echo $row['status']; ?></td>
 

@@ -936,6 +936,232 @@ margin-bottom:35px;
 
 .page-hero{
 
+padding:90px 0;
+
+background:linear-gradient(135deg, rgba(108,99,255,.08), rgba(245,158,11,.08));
+
+}
+
+.dashboard-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:20px;
+
+}
+
+.dashboard-card{
+
+background:white;
+
+border-radius:24px;
+
+padding:28px;
+
+box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+transition:.3s;
+
+display:block;
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+.dashboard-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 24px 60px rgba(0,0,0,.12);
+
+}
+
+.dashboard-card .icon-circle{
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:linear-gradient(135deg, #6C63FF, #F59E0B);
+
+color:white;
+
+font-size:22px;
+
+margin-bottom:18px;
+
+}
+
+.dashboard-card h4{
+
+margin-bottom:10px;
+
+font-size:22px;
+
+}
+
+.dashboard-card p{
+
+color:#555;
+
+line-height:1.8;
+
+}
+
+.disabled-card{
+
+opacity:.65;
+
+cursor:not-allowed;
+
+}
+
+.summary-card{
+
+background:linear-gradient(135deg, #6C63FF, #8B5CF6);
+
+color:white;
+
+border-radius:24px;
+
+padding:28px;
+
+box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.summary-card h3{
+
+font-size:44px;
+
+margin-bottom:0;
+
+}
+
+.summary-card span{
+
+font-size:14px;
+
+color:rgba(255,255,255,.85);
+
+}
+
+.metric-card{
+
+background:white;
+
+border-radius:24px;
+
+padding:28px;
+
+box-shadow:0 18px 35px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.metric-card:hover{
+
+transform:translateY(-4px);
+
+}
+
+.metric-card h3{
+
+font-size:38px;
+
+margin-bottom:8px;
+
+}
+
+.metric-card span{
+
+color:#6B7280;
+
+}
+
+.dashboard-actions{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+gap:24px;
+
+}
+
+.dashboard-hero{
+
+background:#F8FAFC;
+
+border-radius:24px;
+
+padding:32px;
+
+box-shadow:0 18px 35px rgba(0,0,0,.08);
+
+margin-bottom:30px;
+
+}
+
+.dashboard-hero h1{
+
+font-size:38px;
+
+margin-bottom:12px;
+
+}
+
+.dashboard-hero p{
+
+color:#4B5563;
+
+line-height:1.8;
+
+}
+
+.dashboard-link{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+.dashboard-card .card-footer{
+
+margin-top:18px;
+
+font-size:14px;
+
+color:#6B7280;
+
+}
+
+.disabled-card{
+
+opacity:.65;
+
+cursor:not-allowed;
+
+}
+
+
+
+.page-hero{
+
 padding:130px 0 80px;
 
 background:linear-gradient(135deg, rgba(108,99,255,.12), rgba(245,158,11,.12));

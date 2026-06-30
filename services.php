@@ -18,6 +18,7 @@
                 <h5 class="section-subtitle">OUR SERVICES</h5>
                 <h1 class="page-title">Everything you need for a magical celebration.</h1>
                 <p class="page-text">Book high-quality services with confidence and let EventEase bring your event vision to life.</p>
+                <a href="login.php" class="btn btn-warning btn-lg">Book Decorators</a>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4">

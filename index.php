@@ -1287,7 +1287,7 @@ Service Request through your dashboard.
 <a href="login.php"
 class="btn btn-warning btn-lg mt-3">
 
-Request a Service
+Book Decorators
 
 </a>
 

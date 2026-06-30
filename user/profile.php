@@ -59,57 +59,51 @@ if(isset($_POST['update']))
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <title>Profile</title>
+    <title>My Profile | EventEase</title>
 </head>
 <body>
 
-<h2>My Profile</h2>
+<div class="container py-5">
+    <div class="page-card mx-auto" style="max-width:760px;">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h2 class="page-title">My Profile</h2>
+                <p class="page-text">Update your personal details and keep your account information current.</p>
+            </div>
+            <div class="icon-circle"><i class="fas fa-user"></i></div>
+        </div>
 
-<form method="POST">
+        <form method="POST" class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" value="<?php echo htmlspecialchars($user['name']); ?>" required>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" value="<?php echo htmlspecialchars($user['email']); ?>" required>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Phone</label>
+                <input type="text" class="form-control" name="phone" value="<?php echo htmlspecialchars($user['phone']); ?>" required>
+            </div>
+            <div class="col-12">
+                <button type="submit" name="update" class="btn btn-warning">Update Profile</button>
+                <a href="dashboard.php" class="btn btn-outline-secondary ms-2">Back to Dashboard</a>
+            </div>
+        </form>
 
-Name <br>
-<input type="text"
-name="name"
-value="<?php echo $user['name']; ?>"
-required>
+        <?php if($msg): ?>
+            <div class="alert alert-success mt-4"><?php echo htmlspecialchars($msg); ?></div>
+        <?php endif; ?>
+    </div>
+</div>
 
-<br><br>
-
-Email <br>
-<input type="email"
-name="email"
-value="<?php echo $user['email']; ?>"
-required>
-
-<br><br>
-
-Phone <br>
-<input type="text"
-name="phone"
-value="<?php echo $user['phone']; ?>"
-required>
-
-<br><br>
-
-<input type="submit"
-name="update"
-value="Update Profile">
-
-</form>
-
-<br>
-
-<?php echo $msg; ?>
-
-<br><br>
-
-<a href="dashboard.php">Back Dashboard</a>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>
 </body>
